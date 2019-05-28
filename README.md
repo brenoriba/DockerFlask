@@ -17,11 +17,6 @@ Run container:
 docker run -d -p 5000:5000 docker_flask:latest
 ```
 
-About Dockerfile:
-```
-This Dockerfile copies our current folder, . , into our container folder /app . It sets that folder as the working directory, installs all our requirements with pip install from requirements.txt, and then runs the file using python app.py
-```
-
 However this has a few pieces I think are important. First thing is -d which detatches from the run. This means you won’t see any output. You can remove the -d if you would like to see the run process.
 
 Next is -p which specifies the port it is going to run on. In out app.py file we used app.run(debug=True, host=’0.0.0.0') so we needed to specify which port when using flask run , which above you can see I used 5000.
@@ -49,3 +44,7 @@ Kill a container:
 ```
 docker kill <CONTAINER ID>
 ```
+
+## About Dockerfile:
+
+This Dockerfile copies our current folder, . , into our container folder /app . It sets that folder as the working directory, installs all our requirements with pip install from requirements.txt, and then runs the file using python app.py
