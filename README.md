@@ -9,7 +9,7 @@ https://www.docker.com/get-started
 
 Build our docker image:
 ```
-docker build -t my_docker_flask:latest .
+docker build -t docker_flask:latest .
 ```
 
 Run container:
