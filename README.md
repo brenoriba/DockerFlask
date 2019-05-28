@@ -45,6 +45,6 @@ Kill a container:
 docker kill <CONTAINER ID>
 ```
 
-## About Dockerfile:
+## About Dockerfile
 
 This Dockerfile copies our current folder, . , into our container folder /app . It sets that folder as the working directory, installs all our requirements with pip install from requirements.txt, and then runs the file using python app.py
